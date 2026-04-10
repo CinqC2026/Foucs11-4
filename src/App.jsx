@@ -8,8 +8,8 @@ const S1="#1a5276", S2="#1d6a4a", S3="#6e2f8a", S4="#b7470a";
 
 const screens = [
   { id:"intro", type:"intro",
-    title:"Welcome to the Focus 11 Training", subtitle:"Our Operating Model",
-    body:"This training will walk you through our operating model — the Focus 11 — which defines how we work to understand, engage, and support the Family Members and communities we serve. There are 11 components organised into 4 sections. We'll explore each one together.",
+    title:"Welcome to the Operating Model Training",
+    body:"This training will walk you through our operating model. You may sometimes hear it referenced as the Focus 11 model because it originated out of an initiative whose core strategy informed our operating model and identified the 11 components that are essential to work together to drive outcomes. The components are organized into 4 sections and we will explore each one together.",
     cta:"Get Started" },
   // ── S1 ──
   { id:"s1", type:"section-header", section:"Section 1 of 4", title:"Deeply Understand", color:S1,
@@ -18,8 +18,8 @@ const screens = [
     title:"Population Health View", icon:"🏘️",
     keyMessage:"We use data and community insight together to understand the population we serve.",
     points:[
-      { label:"Risk Stratification", detail:"We use a predictive analytics model to stratify our population by risk — helping us prioritise resources and interventions where they're needed most." },
-      { label:"Data Analysis", detail:"We analyse data across the population to identify trends, gaps, and opportunities to improve health outcomes at scale." },
+      { label:"Risk Stratification", detail:"We use a predictive analytics model to stratify our population by risk — helping us prioritize resources and interventions where they're needed most. For example, some Family Members may at times be designated as \"high\" or \"critical\" if they have many chronic conditions or are frequently in the hospital." },
+      { label:"Data Analysis", detail:"We analyze data across the population to identify trends, gaps, and opportunities to improve health outcomes at scale." },
       { label:"Community Insights", detail:"Data alone isn't enough. We pair it with on-the-ground community insights to understand the lived experience of the Family Members we serve — and we work in partnership with the community rather than managing them from the outside." },
     ],
     callout:"💡 Key Principle: Population-level understanding informs where and how we focus our energy — it's the foundation for everything that follows." },
@@ -29,14 +29,14 @@ const screens = [
     points:[
       { label:"3,000+ Data Points & CINQIQ", detail:"We compile over 3,000 data points per individual, drawing on clinical, personal, and social information to build a complete picture of each Family Member. Much of this is reflected in CINQIQ — our proprietary tool — which brings together the rich data we hold on each person to inform how we engage and support them." },
       { label:"Data Sources", detail:"Information comes from multiple sources: CINQIQ, health information exchanges (HIE), practice-level clinical data, ADT feeds, claims data, and more — giving us a comprehensive, real-time view of each Family Member." },
-      { label:"Clinical + Personal + Social → Draft Member Action Plan", detail:"We look beyond clinical data to understand the full person — their circumstances, social context, and personal history. This holistic view is used to develop a draft Member Action Plan: a personalised starting point for how to best meet that Family Member's needs and build genuine trust." },
+      { label:"Clinical + Personal + Social → Member Action Plan", detail:"We look beyond clinical data to understand the full person — their circumstances, social context, and personal history. This holistic view is used to develop a Member Action Plan: a personalized starting point for how to best meet that Family Member's needs and build genuine trust." },
     ],
-    callout:"💡 Key Principle: The 360 view isn't about surveillance — it's about understanding each Family Member well enough to show up for them in a way that's meaningful to them." },
+    callout:"💡 Key Principle: The 360 view is about understanding each Family Member well enough to show up for them in a way that is meaningful to them. This knowledge will help us reach them, connect with them and sustain the relationship better." },
   { id:"q1", type:"quiz", title:"Knowledge Check – Deeply Understand",
     questions:[
       { q:"What do we combine with data analysis to form our Population Health View?", options:["Clinical records only","Community insights and partnership with the community","Claims data and ADT feeds","CINQIQ reports"], answer:1, explanation:"Data analysis is paired with community insights and a partnership approach — so we truly understand the population, not just the numbers." },
       { q:"What is CINQIQ?", options:["A national health information exchange","Our proprietary tool that brings together 3,000+ data points on each Family Member","A claims processing platform","A risk stratification algorithm"], answer:1, explanation:"CINQIQ is our proprietary tool — it brings together the rich data we hold on each Family Member to inform how we engage and support them." },
-      { q:"What does the 360 Member View help us create for each individual?", options:["A final care plan","A risk score only","A draft Member Action Plan","A community health profile"], answer:2, explanation:"The rich data we compile is used to develop a draft Member Action Plan — a personalised starting point for how to best support that Family Member." },
+      { q:"What does the 360 Member View help us create for each individual?", options:["A final care plan","A risk score only","A Member Action Plan","A community health profile"], answer:2, explanation:"The rich data we compile is used to develop a Member Action Plan — a personalized starting point for how to best support that Family Member." },
     ]},
   // ── S2 ──
   { id:"s2", type:"section-header", section:"Section 2 of 4", title:"Engaging with Empathy", color:S2,
@@ -46,7 +46,7 @@ const screens = [
     keyMessage:"We don't just serve communities — we are embedded in them.",
     points:[
       { label:"From the Community, For the Community", detail:"Our employees often come from the communities they serve, bringing authentic knowledge, cultural understanding, and genuine connection." },
-      { label:"Participating in Community Life", detail:"We show up at community events, build relationships with stakeholders, and become a familiar, trusted presence." },
+      { label:"Participating in Community Life", detail:"We show up at community events, build relationships with stakeholders, and become a familiar, trusted presence. This includes connecting with people through the organizations and institutions that are already woven into the fabric of community life — such as civic organizations, faith-based organizations, and other community anchors where Family Members already gather, find support, and place their trust. Ideally, our community presence precedes activation — meaning Family Members have already seen us, heard of us, or encountered us in their community before any individual outreach begins. That familiarity makes a meaningful difference when we do reach out." },
       { label:"Community Insights", detail:"Being present in the community means we're continuously gathering real-world insight that informs how we engage with Family Members and where needs exist." },
       { label:"Digital Presence & Outreach", detail:"We also use digital channels and mailers to ensure Family Members are broadly aware of who we are before deeper engagement begins." },
     ],
@@ -55,19 +55,19 @@ const screens = [
     title:"Activation", icon:"🔍",
     keyMessage:"We keep activating until we've found, reached, and begun to connect every Family Member to what they need.",
     points:[
-      { label:"Locating Hard-to-Reach Family Members", detail:"Using the rich data from the 360 Member View, we work to locate Family Members who may be difficult to reach — so no one falls through the cracks." },
+      { label:"Locating Hard-to-Reach Family Members", detail:"Using the rich data from the 360 Member View, we work to locate Family Members who may be difficult to reach — so no one falls through the cracks. This may be because we have improved or updated contact information, or because we have found personal connections in the community who can help us make that initial introduction." },
       { label:"Building Trust and Reaching Family Members", detail:"Finding someone is only the first step. Activation is also about truly reaching them — establishing a connection built on trust and genuine relationship." },
       { label:"Understanding Goals and Ecosystem", detail:"We start to understand what matters to the Family Member: their personal goals, their caregiver, how they navigate the world, and who is important in their life." },
-      { label:"Identifying Social Needs", detail:"We listen for social needs and the things that really matter to them — because meeting a Family Member where they are, on their terms, is how trust is built." },
+      { label:"Identifying and Addressing Social Needs", detail:"We listen for social needs, such as housing, transportation, and food — because meeting a Family Member where they are, on their terms, is how trust is built. We don't just identify these needs and move on — we also try to close the loop and address them, connecting Family Members to the resources and support that can make a real difference in their lives." },
       { label:"Connecting to Resources and Care", detail:"Activation also means making that first meaningful connection — to clinical team members, circles of care, a case manager, an AWV, or whatever the Family Member needs." },
     ],
-    callout:"💡 Key Principle: Activation is persistent and person-centred. We don't stop at contact — we keep going until we've established a real relationship and connected the Family Member to the support they need." },
+    callout:"💡 Key Principle: Activation is persistent and person-centered. We don't stop at contact — we keep going until we've established a real relationship and connected the Family Member to the support they need." },
   { id:"c5", type:"component", number:"Component 5", section:"Engaging with Empathy", sectionColor:S2,
     title:"Ongoing Care", icon:"💬",
     keyMessage:"Ongoing care is about being a consistent, trusted presence — and being the Family Member's first call when something comes up.",
     points:[
       { label:"Regular, Rhythmic Touchpoints", detail:"Our Care Experience Specialists maintain an ongoing relationship with each Family Member — at minimum every two weeks. For some Family Members, depending on status and preference, approximately once a month." },
-      { label:"Proactive Awareness", detail:"The ongoing relationship functions almost like a surveillance system in the best sense — consistently aware of a Family Member's wellbeing so we can act early, not reactively." },
+      { label:"Proactive Awareness", detail:"The ongoing relationship functions almost like an early warning system in the best sense — consistently aware of a Family Member's wellbeing so we can act early, not reactively." },
       { label:"Earlier Identification of Needs", detail:"Because we're in regular contact, we identify emerging needs much sooner — clinical, social, or otherwise — and respond before things escalate." },
       { label:"Be Their First Call", detail:"Our ultimate goal is to be the person a Family Member calls first when something comes up with their health — and to help them navigate through the system." },
       { label:"Health Navigation, Social Barriers & Health Literacy", detail:"Ongoing care includes helping Family Members navigate the health system, closing social drivers of health, removing barriers, and building health literacy." },
@@ -81,13 +81,13 @@ const screens = [
     ]},
   // ── S3 ──
   { id:"s3", type:"section-header", section:"Section 3 of 4", title:"Circles of Care & Care Management", color:S3,
-    body:"For our highest-need Family Members, we deploy a powerful model of integrated, high-touch care. This section covers how we organise our teams, manage care, and support every Family Member — regardless of risk level.", cta:"Start Section" },
+    body:"For our highest-need Family Members, we deploy a powerful model of high-touch, integrated and tailored care. This section covers how we organize our teams, manage care, and support every Family Member — regardless of risk level.", cta:"Start Section" },
   { id:"c6a", type:"component", number:"Component 6 – Part A", section:"Circles of Care & Care Management", sectionColor:S3,
     title:"High & Rising Risk: The Circle of Care Team", icon:"⭕",
     keyMessage:"For our highest-need Family Members, we wrap a dedicated, integrated team around them — the Circle of Care.",
     points:[
       { label:"What is the Circle of Care?", detail:"The Circle of Care brings together a multidisciplinary team working in a high-touch, integrated and tailored way around each high or rising risk Family Member. The team includes a nurse practitioner, Care Experience Specialists, nurses, practice facilitators, behavioral health specialists, social workers, and clinical pharmacists." },
-      { label:"The Nurse Practitioner: Captain of the Team", detail:"The Nurse Practitioner leads the Circle of Care. They captain the daily huddle, actively manage the clinical care of the Family Member, ensure the Member Action Plan is meaningful and relevant to the Family Member's health goals, and coordinate priorities across the team." },
+      { label:"The Nurse Practitioner: Captain of the Team", detail:"The Nurse Practitioner leads the Circle of Care. They captain the daily huddle, actively manage the clinical care of all of the Family Members in the Circle of Care, ensure the Member Action Plan is meaningful and relevant to the Family Member's health goals, and coordinate priorities across the team." },
       { label:"The Care Experience Specialist: Backbone of the Circle", detail:"Care Experience Specialists each hold a panel of approximately 70 Family Members. They present updates, keep the team informed on everything happening in a Family Member's life, and serve as the connective tissue between the Family Member and the clinical team." },
       { label:"The Nurse: Chronic Care & Transitions", detail:"Nurses focus on chronic care management, transitions of care, and health education — providing clinical support that keeps Family Members on track and well informed." },
       { label:"The Practice Facilitator: Practice Liaison", detail:"The Practice Facilitator serves as a key liaison between the Circle of Care and the primary care practice — sharing information, coordinating care, and ensuring the practice is aligned with the Family Member's care plan." },
@@ -99,32 +99,33 @@ const screens = [
     keyMessage:"The Circle of Care actively manages chronic conditions, acute events, and the full range of needs for our highest-risk Family Members.",
     points:[
       { label:"Chronic Disease Management", detail:"The core work of the Circle of Care is helping Family Members manage chronic conditions — developing self-management plans, monitoring progress, and adjusting care in line with each Family Member's goals." },
-      { label:"Acute Care at Home & Transitions of Care", detail:"We manage acute situations including care that can be provided at home, and closely oversee transitions of care to prevent unnecessary readmissions." },
+      { label:"Acute Care at Home", detail:"When a Family Member has an acute need, our goal is to manage it safely at home whenever possible — keeping them out of the emergency room. This may involve deploying a clinical partner directly to the Family Member, such as a paramedic, nurse practitioner, or other clinical provider who can assess and treat the situation on site." },
+      { label:"Transitions of Care", detail:"When a Family Member is discharged from a hospital or facility, we work to reach them as soon as possible. Our goal is to ensure they understand their medications and any changes, are clear on their discharge instructions, and continue to be well and medically stable as they return to their normal life." },
       { label:"Pulling in the Right Resources", detail:"We bring in whatever resources a Family Member needs — caregiver support, behavioral health intervention, social services, and more." },
       { label:"Social Driver Support", detail:"Even within a high-touch clinical model, social drivers remain central. The Circle continues to address barriers like housing, food, and transportation that affect Family Members' health outcomes." },
     ],
     callout:"💡 Key Principle: Managing care for high and rising risk Family Members means being proactive, comprehensive, and ready to respond — clinically, socially, and personally." },
   { id:"c7", type:"component", number:"Component 7", section:"Circles of Care & Care Management", sectionColor:S3,
-    title:"Support for All: Population Health Services", icon:"🌐",
+    title:"Whole Population Health", icon:"🌐",
     keyMessage:"Every Family Member — regardless of risk level — deserves support with their health-related social needs, navigation, and access to care.",
     points:[
-      { label:"Closing Health-Related Social Needs", detail:"Every Family Member we support should have their health-related social needs identified and addressed — whether that's food, housing, transportation, or other barriers to health. We make warm, meaningful referrals to community-based organisations (CBOs) rather than simply handing someone a list of phone numbers." },
-      { label:"Care Navigation & Benefits Navigation", detail:"We help Family Members navigate both the health care system and their benefits — ensuring they understand what they're entitled to and can access it." },
+      { label:"Closing Health-Related Social Needs", detail:"Every Family Member we support should have their health-related social needs identified and addressed — whether that's food, housing, transportation, or other barriers to health. We make warm, meaningful referrals to community-based organizations (CBOs) rather than simply handing someone a list of phone numbers, and we follow through to close the loop and ensure those needs are actually met." },
+      { label:"Care Navigation & Benefits Navigation", detail:"We help Family Members navigate both the health care system and their benefits — ensuring they understand what they're entitled to and can access both the care and benefits." },
       { label:"Health Literacy Improvement", detail:"We work to improve every Family Member's ability to understand and act on health information — foundational to self-advocacy, self-management, and better outcomes." },
       { label:"24/7 Care & Triage Access", detail:"Every Family Member we support has access to 24/7 care and triage. Whether it's a question, a concern, or an urgent need — someone is always available." },
-      { label:"Tech-Enabled for Scale", detail:"While personal touch matters, Component 7 must be tech-enabled to succeed. Digital tools, automated triage pathways, and scalable platforms allow us to deliver consistent, responsive support to every Family Member at scale." },
+      { label:"Tech-Enabled for Scale", detail:"While personal touch matters, this work must be tech-enabled to succeed. Digital tools, automated triage pathways, and scalable platforms allow us to deliver consistent, responsive support to every Family Member at scale." },
     ],
-    callout:"💡 Key Principle: Support for All means exactly that — every Family Member, every time. Technology is what makes it possible at scale." },
+    callout:"💡 Key Principle: Whole Population Health means exactly that — every Family Member, every time. Technology is what makes it possible at scale." },
   { id:"q3", type:"quiz", title:"Knowledge Check – Circles of Care & Care Management",
     questions:[
       { q:"Who serves as the 'captain' of the Circle of Care team?", options:["The Care Experience Specialist","The Social Worker","The Nurse Practitioner","The Clinical Pharmacist"], answer:2, explanation:"The Nurse Practitioner leads the Circle of Care — they captain the daily huddle, actively manage the Family Member's clinical care, oversee the Member Action Plan, and coordinate priorities across the team." },
-      { q:"Which of the following is a key function of Component 6 care management?", options:["24/7 digital triage for all Family Members","Managing chronic disease, acute care at home, and transitions of care to reduce readmissions","Conducting community events and building awareness","Completing the initial 360 Member View"], answer:1, explanation:"Component 6 is focused on active care management — chronic disease, acute situations including home-based care, and managing transitions to prevent readmissions." },
-      { q:"What does Component 7 (Support for All) apply to?", options:["Only high and rising risk Family Members","Only Family Members who request it","Every Family Member we support, regardless of risk level","Only Family Members in the Circle of Care"], answer:2, explanation:"Component 7 is a population health approach — it applies to every Family Member we support." },
+      { q:"Which of the following is a key function of High & Rising Risk Care Management?", options:["24/7 digital triage for all Family Members","Managing chronic disease, acute care at home, and transitions of care to reduce readmissions","Conducting community events and building awareness","Completing the initial 360 Member View"], answer:1, explanation:"High & Rising Risk Care Management is focused on active care — chronic disease, acute situations including home-based care, and managing transitions to prevent readmissions." },
+      { q:"What does Whole Population Health apply to?", options:["Only high and rising risk Family Members","Only Family Members who request it","Every Family Member we support, regardless of risk level","Only Family Members in the Circle of Care"], answer:2, explanation:"Whole Population Health is a population health approach — it applies to every Family Member we support." },
       { q:"What does IDT stand for in the context of the Circle of Care?", options:["Integrated Digital Triage","Individual Development Team","Interdisciplinary Team rounds","Internal Discharge Tracking"], answer:2, explanation:"IDT stands for Interdisciplinary Team rounds — where specialists like behavioral health, social work, and clinical pharmacy are identified and brought in to address the full spectrum of a Family Member's needs." },
     ]},
   // ── S4 ──
   { id:"s4", type:"section-header", section:"Section 4 of 4", title:"Mutually Beneficial Relationships", color:S4,
-    body:"Our model doesn't operate in isolation. We build strong, reciprocal relationships with the partners who are already trusted by our Family Members — primary care practices, hospitals, facilities, and community organisations. This section covers how we work alongside those partners to deliver better outcomes together.", cta:"Start Section" },
+    body:"Our model doesn't operate in isolation. We build strong, reciprocal relationships with the partners who are already trusted by our Family Members — primary care practices, hospitals, facilities, and community organizations. This section covers how we work alongside those partners to deliver better outcomes together.", cta:"Start Section" },
   { id:"c8a", type:"component", number:"Component 8 – Part A", section:"Mutually Beneficial Relationships", sectionColor:S4,
     title:"PCP / Practice Support", icon:"🩺",
     keyMessage:"We work alongside primary care practices as trusted partners — augmenting their capacity, sharing data, and helping them deliver better outcomes for shared Family Members.",
@@ -133,7 +134,7 @@ const screens = [
       { label:"Facilitating Access", detail:"We help ensure Family Members can get in for visits — removing barriers to access and helping practices stay connected to Family Members who might otherwise fall through the gaps." },
       { label:"Augmenting Services & Capacity", detail:"When a practice doesn't have capacity available — for example, when a transition of care needs to happen — we step in to augment their capacity, provide interim support, and maintain continuity for the Family Member." },
       { label:"Co-Management of High & Rising Risk Family Members", detail:"For the most complex Family Members, we engage in co-management alongside the practice — coordinating closely so that clinical decisions and care plans are aligned." },
-      { label:"Data, Insights & Performance Information", detail:"We provide practices with data and insights about their Family Member population and regularly share performance information. Our Partner Provider Executive and CMO Dyad work directly with practice leadership to review these insights and develop shared plans." },
+      { label:"Data, Insights & Performance Information", detail:"We provide practices with data and insights about their Family Member population and regularly share performance information. Our practice support teams — including Practice Facilitators, Regional Chief Medical Officers, and Regional Network Executives — work directly with practice leadership to review these insights and develop shared plans." },
     ],
     callout:"💡 Key Principle: Our relationship with primary care practices is built on mutual benefit. We bring data, capacity, and support — they bring trust, continuity, and clinical relationships. Together, we deliver better care for Family Members." },
   { id:"c8b", type:"component", number:"Component 8 – Part B", section:"Mutually Beneficial Relationships", sectionColor:S4,
@@ -163,17 +164,17 @@ const screens = [
     points:[
       { label:"Skilled Nursing Facility Partnerships", detail:"We build relationships with skilled nursing facilities and similar care settings to coordinate care for Family Members who are receiving post-acute or long-term care services." },
       { label:"24/7 Support & Escalation", detail:"We provide facility partners with access to 24/7 support and a clear escalation pathway — so that when questions or concerns arise about a Family Member, there is always someone to call." },
-      { label:"Caregiver Support", detail:"We extend our caregiver support capabilities to Family Members in facility settings — recognising that caregivers remain important even when a Family Member is receiving formal care services." },
+      { label:"Caregiver Support", detail:"We extend our caregiver support capabilities to Family Members in facility settings — recognizing that caregivers remain important even when a Family Member is receiving formal care services." },
       { label:"Coordinated, Continuous Care", detail:"Our goal is to ensure that a Family Member's care doesn't become fragmented when they move into a facility setting. We stay engaged, stay informed, and help coordinate across all the parties involved in their care." },
     ],
-    callout:"💡 Key Principle: Facilities are part of the care continuum. Our partnerships ensure Family Members receive the same level of coordinated, person-centred support — wherever they are." },
+    callout:"💡 Key Principle: Facilities are part of the care continuum. Our partnerships ensure Family Members receive the same level of coordinated, person-centered support — wherever they are." },
   { id:"c11", type:"component", number:"Component 11", section:"Mutually Beneficial Relationships", sectionColor:S4,
     title:"Home & Community-Based Partners", icon:"🌱",
     keyMessage:"Our network of home and community-based partners extends our reach — bringing care, services, and social support directly to Family Members where they live.",
     points:[
-      { label:"The Togetherly Network", detail:"In many ways, this component represents our Togetherly network — our network of alternative and community-based providers who support the work we do with Family Members in their homes and communities. Together, these partners form a network that wraps around each Family Member — extending what we can offer beyond clinical care and into every aspect of their life that affects their health." },
+      { label:"Togetherly (CINQ's Neighborhood Network)", detail:"In many ways, this component represents Togetherly — CINQ's neighborhood network of alternative and community-based providers who support the work we do with Family Members in their homes and communities. Together, these partners form a network that wraps around each Family Member — extending what we can offer beyond clinical care and into every aspect of their life that affects their health." },
       { label:"National Networks: Lab, Imaging & Home-Based Services", detail:"We work with national network partners to provide services like lab, imaging, and other home-based care — ensuring Family Members can access clinical services without unnecessary barriers or travel." },
-      { label:"Local Community-Based Organizations", detail:"Equally important is the local component — the community-based organisations in each market that support health-related social needs for Family Members. These are the partners who provide housing support, transportation, food access, and other services that directly address the social drivers of health." },
+      { label:"Local Community-Based Organizations", detail:"Equally important is the local component — the community-based organizations in each market that support health-related social needs for Family Members. These are the partners who provide housing support, transportation, food access, and other services that directly address the social drivers of health." },
     ],
     callout:"💡 Key Principle: Health happens at home and in the community. Our partnerships in this space ensure we can meet Family Members where they are — and address the full picture of what affects their wellbeing." },
   { id:"q4", type:"quiz", title:"Knowledge Check – Mutually Beneficial Relationships",
@@ -181,26 +182,13 @@ const screens = [
       { q:"What are the five workflow areas that Practice Facilitators support in primary care practices?", options:["Billing, scheduling, referrals, documentation, and coding","Member rosters, transitions of care, quality measures, risk coding, and high & rising risk care management","Credentialing, training, quality, staffing, and Family Member satisfaction","Family Member engagement, activation, social needs, care planning, and follow-up"], answer:1, explanation:"Practice Facilitators support five key workflows: member rosters and voluntary alignment, transitions of care, quality and preventable events (including the Core Four), risk coding and adjustment, and high & rising risk care management." },
       { q:"What are the 'Core Four' quality measures Practice Facilitators focus on?", options:["Diabetes, hypertension, asthma, and depression screening","Breast cancer screening, colorectal cancer screening, diabetic control, and controlling high blood pressure","Annual wellness visits, medication reconciliation, care plans, and advance directives","BMI screening, cholesterol management, flu vaccination, and smoking cessation"], answer:1, explanation:"The Core Four are: breast cancer screening, colorectal cancer screening, diabetic control, and controlling high blood pressure." },
       { q:"What is one of our primary goals when partnering with hospitals?", options:["Taking over discharge planning entirely","Replacing the hospital's case management team","Diverting unnecessary ED visits by keeping Family Members well-supported in the community","Providing inpatient clinical staffing"], answer:2, explanation:"ED diversion is a key goal. By providing 24/7 support and keeping Family Members connected, we help them get the right care in the right setting — before they end up in the emergency department." },
-      { q:"What does our Togetherly network and home & community-based partners (Component 11) include?", options:["Only national clinical networks for lab and imaging","Only local housing and food organisations","Both national networks (lab, imaging, home-based services) and local community-based organisations that address health-related social needs","Only alternative care providers"], answer:2, explanation:"Component 11 encompasses both national networks — supporting lab, imaging, and home-based clinical services — and local community-based organisations that address social needs like housing, transportation, and food for Family Members." },
+      { q:"What does our Togetherly network and home & community-based partners include?", options:["Only national clinical networks for lab and imaging","Only local housing and food organizations","Both national networks (lab, imaging, home-based services) and local community-based organizations that address health-related social needs","Only alternative care providers"], answer:2, explanation:"Component 11 encompasses both national networks — supporting lab, imaging, and home-based clinical services — and local community-based organizations that address social needs like housing, transportation, and food for Family Members." },
     ]},
   { id:"complete", type:"complete",
     title:"Training Complete — Well Done!",
-    body:"You've completed the full Focus 11 Operating Model training. You now have a solid understanding of all 11 components across our four sections: Deeply Understand, Engaging with Empathy, Circles of Care & Care Management, and Mutually Beneficial Relationships.",
+    body:"You've completed the full Operating Model training. You now have a solid understanding of all 11 components across our four sections: Deeply Understand, Engaging with Empathy, Circles of Care & Care Management, and Mutually Beneficial Relationships.",
     next:"Thank you for your commitment to understanding how we work. This model is how we show up for our Family Members — every day." },
 ];
-
-function btn(color, outline=false) {
-  return {
-    background: outline ? "transparent" : color,
-    color: outline ? color : "#fff",
-    border: `2px solid ${color}`,
-    borderRadius: 8,
-    padding: "10px 22px",
-    fontSize: 14,
-    fontWeight: 600,
-    cursor: "pointer"
-  };
-}
 
 export default function App() {
   const [idx, setIdx] = useState(0);
@@ -214,18 +202,17 @@ export default function App() {
   const progress = Math.round((idx / (total - 1)) * 100);
   const sc = screen.sectionColor || screen.color || theme.primary;
 
-  const goNext = () => { setIdx(i => Math.min(i+1, total-1)); setExpanded(null); setAnswers({}); setSubmitted(false); setScore(null); };
-  const goPrev = () => { setIdx(i => Math.max(i-1, 0)); setExpanded(null); setAnswers({}); setSubmitted(false); setScore(null); };
-  const submitQuiz = () => { let c=0; screen.questions.forEach((q,i) => { if(answers[i]===q.answer) c++; }); setScore(c); setSubmitted(true); };
+  const goNext = () => { setIdx(i=>Math.min(i+1,total-1)); setExpanded(null); setAnswers({}); setSubmitted(false); setScore(null); };
+  const goPrev = () => { setIdx(i=>Math.max(i-1,0)); setExpanded(null); setAnswers({}); setSubmitted(false); setScore(null); };
+  const submitQuiz = () => { let c=0; screen.questions.forEach((q,i)=>{if(answers[i]===q.answer)c++;}); setScore(c); setSubmitted(true); };
   const allAnswered = screen.type==="quiz" && Object.keys(answers).length===screen.questions?.length;
-
   const expandBg = { [S1]:"#eaf1f8", [S2]:"#eaf4ef", [S3]:"#f3eef9", [S4]:"#fdf3ec" };
 
   return (
     <div style={{ fontFamily:"'Segoe UI',sans-serif", background:"#e8eef4", minHeight:"100vh", display:"flex", flexDirection:"column", alignItems:"center", justifyContent:"center", padding:"24px 16px" }}>
       <div style={{ width:"100%", maxWidth:720, marginBottom:12 }}>
         <div style={{ display:"flex", justifyContent:"space-between", fontSize:12, color:"#555", marginBottom:4 }}>
-          <span>Focus 11 Training</span><span>{progress}% complete</span>
+          <span>Operating Model Training</span><span>{progress}% complete</span>
         </div>
         <div style={{ background:"#cdd7e0", borderRadius:8, height:8 }}>
           <div style={{ background:theme.accent, width:`${progress}%`, height:8, borderRadius:8, transition:"width 0.4s" }} />
@@ -239,7 +226,6 @@ export default function App() {
             <div style={{ background:theme.primary, padding:"48px 40px 36px", color:"#fff" }}>
               <div style={{ fontSize:13, letterSpacing:2, textTransform:"uppercase", opacity:0.7, marginBottom:12 }}>Operating Model</div>
               <h1 style={{ margin:0, fontSize:28, fontWeight:700 }}>{screen.title}</h1>
-              <p style={{ opacity:0.85, marginTop:10, fontSize:16 }}>{screen.subtitle}</p>
             </div>
             <div style={{ padding:"32px 40px" }}>
               <p style={{ fontSize:16, color:theme.text, lineHeight:1.7 }}>{screen.body}</p>
@@ -275,11 +261,11 @@ export default function App() {
               <p style={{ fontSize:13, color:"#666", marginBottom:16 }}>Tap each area to explore:</p>
               <div style={{ display:"flex", flexDirection:"column", gap:10 }}>
                 {screen.points.map((pt,i) => (
-                  <div key={i} onClick={() => setExpanded(expanded===i ? null : i)}
-                    style={{ border:`2px solid ${expanded===i ? sc : "#dde3ea"}`, borderRadius:10, padding:"14px 18px", cursor:"pointer", background:expanded===i ? (expandBg[sc]||"#f5f5f5") : "#fafbfc", transition:"all 0.2s" }}>
+                  <div key={i} onClick={()=>setExpanded(expanded===i?null:i)}
+                    style={{ border:`2px solid ${expanded===i?sc:"#dde3ea"}`, borderRadius:10, padding:"14px 18px", cursor:"pointer", background:expanded===i?(expandBg[sc]||"#f5f5f5"):"#fafbfc", transition:"all 0.2s" }}>
                     <div style={{ display:"flex", justifyContent:"space-between", alignItems:"center" }}>
                       <span style={{ fontWeight:600, color:sc, fontSize:15 }}>{pt.label}</span>
-                      <span style={{ color:sc, fontSize:18 }}>{expanded===i ? "▲" : "▼"}</span>
+                      <span style={{ color:sc, fontSize:18 }}>{expanded===i?"▲":"▼"}</span>
                     </div>
                     {expanded===i && <p style={{ margin:"10px 0 0", fontSize:14, color:theme.text, lineHeight:1.6 }}>{pt.detail}</p>}
                   </div>
@@ -305,7 +291,7 @@ export default function App() {
             <div style={{ padding:"28px 40px" }}>
               {submitted && (
                 <div style={{ background:score===screen.questions.length?"#eafaf1":"#fdecea", border:`1px solid ${score===screen.questions.length?"#a9dfbf":"#f5b7b1"}`, borderRadius:10, padding:"14px 18px", marginBottom:20, fontSize:15, fontWeight:600, color:score===screen.questions.length?theme.success:theme.warn }}>
-                  {score===screen.questions.length ? "🎉 Perfect score!" : `You got ${score} of ${screen.questions.length} correct. Review the explanations below.`}
+                  {score===screen.questions.length?"🎉 Perfect score!":`You got ${score} of ${screen.questions.length} correct. Review the explanations below.`}
                 </div>
               )}
               {screen.questions.map((q,qi) => (
@@ -314,9 +300,9 @@ export default function App() {
                   {q.options.map((opt,oi) => {
                     const sel=answers[qi]===oi, correct=oi===q.answer;
                     let bg=sel?"#d6eaf8":"#fafbfc", border=sel?theme.accent:"#dde3ea";
-                    if(submitted){ if(correct){ bg="#eafaf1"; border="#27ae60"; } else if(sel&&!correct){ bg="#fdecea"; border=theme.warn; } }
+                    if(submitted){if(correct){bg="#eafaf1";border="#27ae60";}else if(sel&&!correct){bg="#fdecea";border=theme.warn;}}
                     return (
-                      <div key={oi} onClick={() => !submitted && setAnswers(a => ({...a,[qi]:oi}))}
+                      <div key={oi} onClick={()=>!submitted&&setAnswers(a=>({...a,[qi]:oi}))}
                         style={{ border:`2px solid ${border}`, borderRadius:8, padding:"10px 16px", marginBottom:8, cursor:submitted?"default":"pointer", background:bg, fontSize:14, color:theme.text, display:"flex", alignItems:"center", gap:10 }}>
                         <span style={{ width:20, height:20, borderRadius:"50%", border:`2px solid ${border}`, background:sel?theme.accent:"#fff", display:"inline-block", flexShrink:0 }} />
                         {opt}
@@ -330,7 +316,7 @@ export default function App() {
                 <button onClick={goPrev} style={btn("#888",true)}>← Back</button>
                 {!submitted
                   ? <button onClick={submitQuiz} disabled={!allAnswered} style={btn(allAnswered?theme.primary:"#aaa")}>Submit Answers</button>
-                  : <><button onClick={() => { setAnswers({}); setSubmitted(false); setScore(null); }} style={btn("#888",true)}>Try Again</button><button onClick={goNext} style={btn(theme.success)}>Continue →</button></>
+                  : <><button onClick={()=>{setAnswers({});setSubmitted(false);setScore(null);}} style={btn("#888",true)}>Try Again</button><button onClick={goNext} style={btn(theme.success)}>Continue →</button></>
                 }
               </div>
             </div>
@@ -348,7 +334,7 @@ export default function App() {
               <p style={{ fontSize:14, color:"#555", fontStyle:"italic" }}>{screen.next}</p>
               <div style={{ display:"flex", gap:12, justifyContent:"center", marginTop:24 }}>
                 <button onClick={goPrev} style={btn("#888",true)}>← Review</button>
-                <button onClick={() => setIdx(0)} style={btn(theme.primary)}>Start Over</button>
+                <button onClick={()=>setIdx(0)} style={btn(theme.primary)}>Start Over</button>
               </div>
             </div>
           </div>
@@ -357,4 +343,8 @@ export default function App() {
       </div>
     </div>
   );
+}
+
+function btn(color,outline=false){
+  return { background:outline?"transparent":color, color:outline?color:"#fff", border:`2px solid ${color}`, borderRadius:8, padding:"10px 22px", fontSize:14, fontWeight:600, cursor:"pointer" };
 }
