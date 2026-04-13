@@ -11,7 +11,6 @@ const screens = [
     title:"Welcome to the Operating Model Training",
     body:"This training will walk you through our operating model. You may sometimes hear it referenced as the Focus 11 model because it originated out of an initiative whose core strategy informed our operating model and identified the 11 components that are essential to work together to drive outcomes. The components are organized into 4 sections and we will explore each one together.",
     cta:"Get Started" },
-  // ── S1 ──
   { id:"s1", type:"section-header", section:"Section 1 of 4", title:"Deeply Understand", color:S1,
     body:"Before we can support anyone, we need to deeply understand who they are — both as a population and as individuals. This section covers the two foundational components that make that possible.", cta:"Start Section" },
   { id:"c1", type:"component", number:"Component 1", section:"Deeply Understand", sectionColor:S1,
@@ -38,7 +37,6 @@ const screens = [
       { q:"What is CINQIQ?", options:["A national health information exchange","Our proprietary tool that brings together 3,000+ data points on each Family Member","A claims processing platform","A risk stratification algorithm"], answer:1, explanation:"CINQIQ is our proprietary tool — it brings together the rich data we hold on each Family Member to inform how we engage and support them." },
       { q:"What does the 360 Member View help us create for each individual?", options:["A final care plan","A risk score only","A Member Action Plan","A community health profile"], answer:2, explanation:"The rich data we compile is used to develop a Member Action Plan — a personalized starting point for how to best support that Family Member." },
     ]},
-  // ── S2 ──
   { id:"s2", type:"section-header", section:"Section 2 of 4", title:"Engaging with Empathy", color:S2,
     body:"Engagement isn't just about making contact — it's about showing up in the right way, in the right places, and earning trust over time. This section covers three components that define how we engage with Family Members and communities.", cta:"Start Section" },
   { id:"c3", type:"component", number:"Component 3", section:"Engaging with Empathy", sectionColor:S2,
@@ -79,7 +77,6 @@ const screens = [
       { q:"What is the minimum frequency of touchpoints in Ongoing Care?", options:["Once a month for all Family Members","Weekly without exception","At least every two weeks, with flexibility based on Family Member preference and status","Only when a clinical need arises"], answer:2, explanation:"The minimum is at least every two weeks, though some Family Members may prefer around once a month. The regularity enables proactive awareness." },
       { q:"Which of the following is part of Activation?", options:["Maintaining weekly touchpoints with established Family Members","Conducting population-level data analysis","Connecting Family Members to clinical teams, case managers, or other resources for the first time","Closing social drivers of health over time"], answer:2, explanation:"Activation includes that critical first connection — to clinical team members, circles of care, a case manager, an AWV, or whatever the Family Member needs." },
     ]},
-  // ── S3 ──
   { id:"s3", type:"section-header", section:"Section 3 of 4", title:"Circles of Care & Care Management", color:S3,
     body:"For our highest-need Family Members, we deploy a powerful model of high-touch, integrated and tailored care. This section covers how we organize our teams, manage care, and support every Family Member — regardless of risk level.", cta:"Start Section" },
   { id:"c6a", type:"component", number:"Component 6 – Part A", section:"Circles of Care & Care Management", sectionColor:S3,
@@ -123,7 +120,6 @@ const screens = [
       { q:"What does Whole Population Health apply to?", options:["Only high and rising risk Family Members","Only Family Members who request it","Every Family Member we support, regardless of risk level","Only Family Members in the Circle of Care"], answer:2, explanation:"Whole Population Health is a population health approach — it applies to every Family Member we support." },
       { q:"What does IDT stand for in the context of the Circle of Care?", options:["Integrated Digital Triage","Individual Development Team","Interdisciplinary Team rounds","Internal Discharge Tracking"], answer:2, explanation:"IDT stands for Interdisciplinary Team rounds — where specialists like behavioral health, social work, and clinical pharmacy are identified and brought in to address the full spectrum of a Family Member's needs." },
     ]},
-  // ── S4 ──
   { id:"s4", type:"section-header", section:"Section 4 of 4", title:"Mutually Beneficial Relationships", color:S4,
     body:"Our model doesn't operate in isolation. We build strong, reciprocal relationships with the partners who are already trusted by our Family Members — primary care practices, hospitals, facilities, and community organizations. This section covers how we work alongside those partners to deliver better outcomes together.", cta:"Start Section" },
   { id:"c8a", type:"component", number:"Component 8 – Part A", section:"Mutually Beneficial Relationships", sectionColor:S4,
@@ -218,9 +214,7 @@ export default function App() {
           <div style={{ background:theme.accent, width:`${progress}%`, height:8, borderRadius:8, transition:"width 0.4s" }} />
         </div>
       </div>
-
       <div style={{ background:"#fff", borderRadius:16, boxShadow:"0 4px 24px rgba(0,0,0,0.10)", maxWidth:720, width:"100%", overflow:"hidden" }}>
-
         {screen.type==="intro" && (
           <div>
             <div style={{ background:theme.primary, padding:"48px 40px 36px", color:"#fff" }}>
@@ -233,7 +227,6 @@ export default function App() {
             </div>
           </div>
         )}
-
         {screen.type==="section-header" && (
           <div>
             <div style={{ background:sc, padding:"36px 40px 28px", color:"#fff" }}>
@@ -249,7 +242,6 @@ export default function App() {
             </div>
           </div>
         )}
-
         {screen.type==="component" && (
           <div>
             <div style={{ background:sc, padding:"32px 40px 24px", color:"#fff" }}>
@@ -281,7 +273,6 @@ export default function App() {
             </div>
           </div>
         )}
-
         {screen.type==="quiz" && (
           <div>
             <div style={{ background:"#2c3e50", padding:"28px 40px 20px", color:"#fff" }}>
@@ -322,7 +313,6 @@ export default function App() {
             </div>
           </div>
         )}
-
         {screen.type==="complete" && (
           <div>
             <div style={{ background:theme.success, padding:"40px 40px 28px", color:"#fff", textAlign:"center" }}>
@@ -339,7 +329,6 @@ export default function App() {
             </div>
           </div>
         )}
-
       </div>
     </div>
   );
